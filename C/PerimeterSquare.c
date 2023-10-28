@@ -1,14 +1,12 @@
 #include <stdio.h>
-// Perimeter of Rectangle
+// Perimeter of Square
 int main() {
-    float l, b;
-    printf("Enter the Length of the Rectangle: ");
-    scanf("%f", &l);
-    printf("Enter the Breadth of the Rectangle: ");
-    scanf("%f", &b);
-    if(l<0 || b<0) {
-        printf("Invalid input as the length and breadth of a rectangle must be a non-negative values");
+    float a;
+    printf("Enter the Side of the Square: ");
+    scanf("%f", &a);
+    if(a<0){
+        printf("Invalid input side of a square must be a non-negative value");
         return 1;
     }
-    printf("The Perimeter of the Rectangle is %f", 2*(l+b));
+    printf("The Perimeter of the Square is %f", 4*a);
 }
